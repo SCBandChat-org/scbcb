@@ -241,7 +241,7 @@ func unmuteHandler(caller *discordgo.Member, msg *discordgo.Message, args []stri
 	if user == nil {
 		return errors.New("First argument should mention user")
 	}
-	if channel == nil && len(remainingArgs) == 1 && "all" == strings.ToLower(remainingArgs[0]) {
+	if channel == nil && len(remainingArgs) == 1 && strings.ToLower(remainingArgs[0]) == "all" {
 		unmuteAll = true
 	} else if len(remainingArgs) > 0 {
 		return fmt.Errorf("Unexpected arguments \"%s\"", strings.Join(remainingArgs, " "))
@@ -326,6 +326,9 @@ func unmuteHandler(caller *discordgo.Member, msg *discordgo.Message, args []stri
 
 		// Unmute them
 		err = discord.GuildMemberRoleRemove(msg.GuildID, user.ID, muteRole)
+		if err != nil {
+			return err
+		}
 	}
 
 	// Construct a reply out of the unmuted channels slice
@@ -476,7 +479,7 @@ func unmuteCallback() {
 
 		// Construct a message to the unmuted user
 		var message strings.Builder
-		message.WriteString(fmt.Sprintf("Your temp mute"))
+		message.WriteString("Your temp mute")
 		if channel != nil {
 			message.WriteString(fmt.Sprintf(" from %s", channel.Mention()))
 		}
