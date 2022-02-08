@@ -26,8 +26,8 @@ func logger(discord *discordgo.Session, m *discordgo.MessageCreate) {
 func logToFile(t time.Time, ch string, con string, a string, un string, disc string) {
 
 	time := t
-	fullpath := "logs/" + fmt.Sprintf("%s/%d/%d/%d/", ch, time.Year(), time.Month(), time.Day())
-	path := "logs/" + fmt.Sprintf("%s/%d/%d/", ch, time.Year(), time.Month())
+	fullpath := "./logs/" + fmt.Sprintf("%s/%d/%d/%d/", ch, time.Year(), time.Month(), time.Day())
+	path := "./logs/" + fmt.Sprintf("%s/%d/%d/", ch, time.Year(), time.Month())
 	if _, err := os.Stat(fullpath); errors.Is(err, os.ErrNotExist) {
 		err := os.MkdirAll(fullpath, os.ModePerm)
 		if err != nil {
