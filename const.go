@@ -55,14 +55,15 @@ func RolesToIDs(roles []Role) []string {
 }
 
 var muteRoles = map[string]string{
-	"":         "653784746308010005",
-	general:    "937499112344023050",
-	media:      "937499263854854215",
-	memes:      "937499313876123688",
-	woodwind:   "937499351687770122",
-	colorguard: "937499395723776101",
-	percussion: "937499444595814420",
-	brass:      "937499491949510696",
+	"":            "653784746308010005",
+	general:       "937499112344023050",
+	media:         "937499263854854215",
+	memes:         "937499313876123688",
+	woodwind:      "937499351687770122",
+	colorguard:    "937499395723776101",
+	percussion:    "937499444595814420",
+	brass:         "937499491949510696",
+	selfPromotion: "953009007923167303",
 }
 
 // ActivityTypeGame      ActivityType = 0
