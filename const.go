@@ -128,6 +128,7 @@ var schools2 = []string{
 	"637810048063766569", //Wade hampton
 	"626535659288395806", //Wagener-Salley
 	"640166574694596608", //White Knoll
+	"983170639865184296", //Wren
 	"624424700680077313"} //York
 
 var classes = []string{
