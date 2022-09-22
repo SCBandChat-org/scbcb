@@ -104,6 +104,7 @@ var schools1 = []string{
 	"624424875297210379", //Dutch Fork
 	"653029291260510209", //Easly
 	"624458714795212801", //Edisto
+	"1022639629675008110", //Fort Dorchester
 	"625489235624984576", //Fort Mill
 	"844766300999647252", //Greenville
 	"632963567557148673", //Hartsville
@@ -112,10 +113,10 @@ var schools1 = []string{
 	"653028895456624640", //JL Mann
 	"625870330388545555", //Laurens
 	"625647039002312715", //Lexington
-	"895120511003132016", //Mauldin
-	"636900835875487774"} //Nation Ford
+	"895120511003132016"} //Mauldin
 
 var schools2 = []string{
+	"636900835875487774", //Nation Ford
 	"625460205756350485", //North Agusta
 	"903808150304620605", //Pelion
 	"901890027288670228", //Pendleton
