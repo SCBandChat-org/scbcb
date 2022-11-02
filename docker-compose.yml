@@ -2,8 +2,11 @@ version: "3.9"  # optional since v1.27.0
 services:
   bot:
     env_file:
-      - .env
+      - /home/nevana/scbcb/.env
     build: .
     volumes:
-      - ./logs:/app/logs
-      - ./foo.db:/app/foo.db
+      - /home/nevana/scbcb/logs:/app/logs
+      - /home/nevana/scbcb/foo.db:/app/foo.db
+
+
+
