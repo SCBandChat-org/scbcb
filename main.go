@@ -16,15 +16,15 @@ func init() {
 	var err error
 
 	// You can set environment variables in the git-ignored .env file for convenience while running locally
-	// err = gotenv.Load()
-	// if err == nil {
-	// 	log.Println("Loaded .env file")
-	// } else if os.IsNotExist(err) {
-	// 	log.Println("No .env file found")
-	// 	err = nil // Mutating state is bad mkay
-	// } else {
-	// 	panic(err)
-	// }
+	err = gotenv.Load("stack.env")
+	if err == nil {
+		log.Println("Loaded .env file")
+	} else if os.IsNotExist(err) {
+		log.Println("No .env file found")
+		err = nil // Mutating state is bad mkay
+	} else {
+		panic(err)
+	}
 
 	token := os.Getenv("DISCORD_BOT_TOKEN") // DISCORD_BOT_TOKEN || dev_token
 	if token == "" {
