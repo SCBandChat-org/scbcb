@@ -1,7 +1,8 @@
 version: "3.9"  # optional since v1.27.0
 services:
   bot:
-    env-file: stack.env
+    env_file:
+      - stack.env
     build: .
     volumes:
       - /home/nevana/scbcb/logs:/app/logs
