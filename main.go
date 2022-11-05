@@ -3,7 +3,6 @@ package main
 import (
 	"log"
 	"os"
-	"os/exec"
 
 	"github.com/bwmarrin/discordgo"
 	"github.com/subosito/gotenv"
