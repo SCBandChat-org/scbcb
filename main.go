@@ -16,12 +16,6 @@ var myselfID string
 func init() {
 	var err error
 
-	out, err := exec.Command("git", "log", "--pretty=format:'%h'", "-n", "1").Output()
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.Print(string(out))
-
 	// You can set environment variables in the git-ignored .env file for convenience while running locally
 	err = gotenv.Load("stack.env")
 	if err == nil {
