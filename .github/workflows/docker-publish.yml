@@ -68,6 +68,11 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
+      # Attempt to create file with commit hash
+      - name: Create commit hash file
+        run:
+          echo ${{ github.sha }} >> .hash
+
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
       - name: Build and push Docker image
