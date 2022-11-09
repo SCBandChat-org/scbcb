@@ -1,7 +1,7 @@
 version: "3.9"  # optional since v1.27.0
 services:
   bot:
-    image: ghcr.io/SCBandChat-org/scbcb:master
+    image: ghcr.io/scbandchat-org/scbcb:master
     build: ./
     env_file:
       - stack.env
