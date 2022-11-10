@@ -11,6 +11,7 @@ COPY go.sum ./
 RUN go mod download
 
 COPY *.go ./
+COPY .hash ./
 
 RUN go build -o /app/scbcb
 
