@@ -161,6 +161,7 @@ var instruments1 = []string{
 	"627258738415501323", //Alto Saxophone
 	"933934882466430986", //Tenor Saxophone
 	"635276668684206100", //Bari Saxophone
+	"1072717280917606481", //Bassoon
 	"625857942989701139", //Trumpet
 	"625870956715442186", //Mellophone
 	"626555254116188160", //Trombone
@@ -175,11 +176,10 @@ var instruments1 = []string{
 	"625476488807972864", //Marimba
 	"627259104615727134", //Bells
 	"626588091246968832", //Rack
-	"626202774165651457", //Synth
-	"625505103822192661", //Snare Drum
-}
+	"626202774165651457"} //Synth
 
 var instruments2 = []string{
+	"625505103822192661", //Snare Drum
 	"625505150559059988", //Tenor Drums
 	"625483605585559552", //Bass Drums
 	"661966954340417546"} //Cymbals
