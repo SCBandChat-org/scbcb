@@ -120,6 +120,7 @@ var schools2 = []string{
 	"1023396806081658940", //Liberty
 	"895120511003132016",  //Mauldin
 	"636900835875487774",  //Nation Ford
+	"1114010463982858352", //Ninety Six
 	"625460205756350485",  //North Agusta
 	"1112465076679610398", //North Myrtle Beach
 	"903808150304620605",  //Pelion
