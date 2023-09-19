@@ -117,7 +117,7 @@ var schools1 = []string{
 
 var schools2 = []string{
 	"625870330388545555",  //Laurens
-	"625647039002312715", ` //Lexington
+	"625647039002312715",  //Lexington
 	"1023396806081658940", //Liberty
 	"895120511003132016",  //Mauldin
 	"636900835875487774",  //Nation Ford
