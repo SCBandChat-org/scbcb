@@ -104,7 +104,7 @@ func initCommands() {
 }
 
 func blankMessageHandler(discord *discordgo.Session, m *discordgo.MessageCreate) {
-	_, _ := discord.ChannelMessageSend(m.ChannelID, "** **")
+	_, _ = discord.ChannelMessageSend(m.ChannelID, "** **")
 	return
 }
 
