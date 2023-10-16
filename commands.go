@@ -103,9 +103,9 @@ func initCommands() {
 	Commands = append(Commands) //, helpCommand)
 }
 
-func blankMessageHandler(discord *discordgo.Session, m *discordgo.MessageCreate) {
-	_, _ = discord.ChannelMessageSend(m.ChannelID, "** **")
-	return
+func blankMessageHandler(caller *discordgo.Member, msg *discordgo.Message, args []string) error {
+	_, err := discord.ChannelMessageSend(msg.ChannelID, "** **")
+	return err
 }
 
 func commands(discord *discordgo.Session, m *discordgo.MessageCreate) {
