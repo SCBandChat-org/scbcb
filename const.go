@@ -137,6 +137,7 @@ var schools2 = []string{
 	"1112465863258407054", //Travelers Rest
 	"637810048063766569",  //Wade hampton
 	"626535659288395806",  //Wagener-Salley
+	"625504845671170063",  //Wando
 	"1153737991949389845", //West Oak
 	"1163521978439827489", //West Florence
 	"640166574694596608",  //White Knoll
