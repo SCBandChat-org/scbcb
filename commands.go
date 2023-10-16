@@ -35,6 +35,14 @@ var Commands = []Command{
 	// 	Handler:     handler,
 	// },
 	{
+		Name:        "blankmessage",
+		Aliases:     []string{"blank"},
+		Description: "Create a blank message",
+		Usage:       []string{""},
+		RoleNeeded:  &Mod,
+		Handler:     blankMessageHandler,
+	},
+	{
 		Name:        "refreshbuttons",
 		Aliases:     []string{"rb"},
 		Description: "test command",
@@ -93,6 +101,11 @@ func initCommands() {
 
 	// Have to append helpCommand after initializing Commands to avoid an initialization loop, but i removed help commands for now
 	Commands = append(Commands) //, helpCommand)
+}
+
+func blankMessageHandler(discord *discordgo.Session, m *discordgo.MessageCreate) {
+	_, _ := discord.ChannelMessageSend(m.ChannelID, "** **")
+	return
 }
 
 func commands(discord *discordgo.Session, m *discordgo.MessageCreate) {
