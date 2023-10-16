@@ -128,6 +128,7 @@ var schools2 = []string{
 	"901890027288670228",  //Pendleton
 	"625840098210086923",  //RiverBluff
 	"636908685813350401",  //Riverside
+	"1163523820779487272", //South Pointe
 	"637810429418274826",  //Spartanburg
 	"637651502814461953",  //Spring Valley
 	"755601893652168854",  //Stratford
@@ -139,10 +140,14 @@ var schools2 = []string{
 	"1153737991949389845", //West Oak
 	"1163521978439827489", //West Florence
 	"640166574694596608",  //White Knoll
-	"983170639865184296",  //Wren
+	"983170639865184296"}  //Wren
+
+var schools3 = []string{
 	"624424700680077313"}  //York
+	
 
 var classes = []string{
+	"631653042755862538", //College Band
 	"631653089123762216", //Graduate
 	"625861140169228288", //senior
 	"625861196548931594", //Junior

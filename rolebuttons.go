@@ -18,6 +18,7 @@ func roleButtons() {
 	messageID5 := "933935681045155874"
 	messageID6 := "933935711596466188"
 	messageID7 := "933937206425428008"
+	messageID8 := "1163529798300221480"
 
 	//this is the worst way to do this, but it stops rare errors
 	time.Sleep(1 * time.Second)
@@ -25,11 +26,12 @@ func roleButtons() {
 	//this is also awful but i dont care
 	updateMessage(schools1, messageID1, channelID)
 	updateMessage(schools2, messageID2, channelID)
-	updateMessage(classes, messageID3, channelID)
-	updateMessage(schoolSize, messageID4, channelID)
-	updateMessage(instruments1, messageID5, channelID)
-	updateMessage(instruments2, messageID6, channelID)
-	updateMessage(leadership, messageID7, channelID)
+	updateMessage(schools3, messageID3, channelID)
+	updateMessage(classes, messageID4, channelID)
+	updateMessage(schoolSize, messageID5, channelID)
+	updateMessage(instruments1, messageID6, channelID)
+	updateMessage(instruments2, messageID7, channelID)
+	updateMessage(leadership, messageID8, channelID)
 }
 func updateMessage(a []string, m string, c string) {
 	com := getButtonsForList(a)
